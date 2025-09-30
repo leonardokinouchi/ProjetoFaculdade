@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre • Brechó</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilos/global.css">
+  <style>
+
+.about {
+  max-width: 880px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.about h1,
+.about h2 {
+  text-align: center;
+  margin: 8px 0;
+}
+
+.lead {
+  color: #555;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 800px) {
+  .cols {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+.list {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.kpi {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 8px 0 18px;
+}
+
+.kpi div {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: #fff;
+  min-width: 120px;
+  text-align: center;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.team .card p {
+  margin: 4px 0;
+}
+
+.faq details {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.cta a {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta a:hover {
+  background: #f2f2f2;
+}
+
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="services.html">Serviços</a></li>
+        <li><a href="gallery.html">Galeria</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="local-wrap" class="about">
+    <section>
+      <h1 class="local-title" style="margin-top:8px;" >Sobre</h1>
+      <p class="lead">Brechó minimalista. Curadoria simples, preços justos e foco em reuso.</p>
+
+      <div class="kpi">
+        <div><strong>+300</strong><br>peças/ano</div>
+        <div><strong>90%</strong><br>reaproveitamento</div>
+        <div><strong>2019</strong><br>desde</div>
+      </div>
+
+      <div class="cols">
+        <article>
+          <h2>Missão</h2>
+          <p>Facilitar o acesso a roupas de qualidade com impacto ambiental reduzido.</p>
+          <h2>Valores</h2>
+          <ul class="list">
+            <li>Simplicidade no design e no processo.</li>
+            <li>Transparência na curadoria e nos preços.</li>
+            <li>Reuso responsável e local.</li>
+          </ul>
+          <h2>Linha do tempo</h2>
+          <div class="list">
+            <p><strong>2019</strong> — Começamos com vendas entre amigos.</p>
+            <p><strong>2022</strong> — Primeiro espaço físico simples.</p>
+            <p><strong>2025</strong> — Catálogo online minimalista.</p>
+          </div>
+        </article>
+
+        <aside>
+          <h2>Como selecionamos</h2>
+          <ol class="list">
+            <li>Estado geral da peça.</li>
+            <li>Versatilidade no dia a dia.</li>
+            <li>Preço acessível.</li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section aria-labelledby="equipe">
+      <h2 id="equipe">Equipe</h2>
+      <div class="team">
+        <article class="card">
+          <h3>Ana</h3>
+          <p>Curadoria</p>
+        </article>
+        <article class="card">
+          <h3>Leo</h3>
+          <p>Operação</p>
+        </article>
+        <article class="card">
+          <h3>Rafa</h3>
+          <p>Atendimento</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq">
+      <h2 id="faq">Perguntas frequentes</h2>
+      <div class="grid">
+        <details>
+          <summary>Posso consignar peças?</summary>
+          <p>Sim, aceitamos peças em bom estado. Veja <a href="services.html">Serviços</a>.</p>
+        </details>
+        <details>
+          <summary>Como lavar lã?</summary>
+          <p>Água fria e secagem à sombra. Mais dicas no <a href="blog.html">Blog</a>.</p>
+        </details>
+      </div>
+    </section>
+
+    <div class="cta">
+      <a href="contact.html">Fale com a gente</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Brechó. Simples e sustentável.</p>
+  </footer>
+</body>
+</html>

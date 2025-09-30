@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato • Brechó</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilos/global.css">
+  <style>
+
+  .local-title {
+    letter-spacing: 0.2px; 
+  }
+  .local-wrap { 
+    max-width: 980px; 
+    margin: 0 auto; 
+    padding: 0 16px; 
+  }
+  .contact-note{
+    font-size:.9rem;
+    color:#666;
+    text-align:center
+  }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="services.html">Serviços</a></li>
+        <li><a href="gallery.html">Galeria</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="local-wrap" style="max-width:720px;margin:24px auto;padding:0 16px">
+    <section aria-labelledby="tit-contato">
+      <h1 class="local-title" style="margin-top:8px;"  id="tit-contato" style="text-align:center;">Contato</h1>
+      <form action="#" method="post" onsubmit="alert('Formulário válido (demo).'); return false;">
+        <label>Nome
+          <input type="text" name="nome" placeholder="Seu nome" required minlength="2">
+        </label><br><br>
+
+        <label>E-mail
+          <input type="email" name="email" placeholder="voce@email.com" required>
+        </label><br><br>
+
+        <label>Telefone
+          <input type="tel" name="tel" placeholder="(11) 91234-5678"
+                 pattern="\(?\d{2}\)?\s?9?\d{4}-?\d{4}" required>
+        </label><br><br>
+
+        <label>Assunto
+          <select name="assunto" required>
+            <option value="">Selecione…</option>
+            <option>Orçamento</option>
+            <option>Dúvida</option>
+            <option>Troca/Devolução</option>
+          </select>
+        </label><br><br>
+
+        <fieldset>
+          <legend>Preferência de contato</legend>
+          <label><input type="radio" name="pref" value="email" required> E-mail</label>
+          <label><input type="radio" name="pref" value="telefone"> Telefone</label>
+        </fieldset><br>
+
+        <label>Assinar novidades
+          <input type="checkbox" name="newsletter"> Quero receber e-mails
+        </label><br><br>
+
+        <label>Mensagem
+          <textarea name="mensagem" rows="5" minlength="10" placeholder="Escreva aqui..." required></textarea>
+        </label><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Brechó. Simples e sustentável.</p>
+  </footer>
+</body>
+</html>
